@@ -36,12 +36,7 @@ public class Order {
     @LastModifiedDate
     private LocalDateTime lastModifiedDate;
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
     private Set<Item> items = new HashSet<>();
-
-    public void addItem(Item item) {
-        items.add(item);
-        item.setOrder(this);
-    }
 
 }
