@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Spring Data Rest with Backbone Js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Orders</h1>
+    <div id="orders-app">
+        <form>
+            <input id="orderNumber" type="text" name="orderNumber">
+            <input id="customer" type="text" name="customer">
+            <button id="create" type="button">Create New</button>
+        </form>
+        <ul id="orders-list"></ul>
+    </div>
+    <script type="text/template" id="order-item-tmpl">
+        <p><a href="/muppets/<%= orderNumber %>"><%= orderNumber %></a></p>
+        <p>Customer: <i><%= customer %></i></p>
+        <button class="remove">x</button>
+      </script>
+    <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
