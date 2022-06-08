@@ -29,3 +29,9 @@ Does seem a shame as this isn't necessarily how I'd model the API from scratch? 
 * https://stackoverflow.com/questions/30464782/how-to-maintain-bi-directional-relationships-with-spring-data-rest-and-jpa
 * https://reflectoring.io/relations-with-spring-data-rest/
 * https://gigsterous.github.io/engineering/2018/01/26/spring-data-rest-projections.html
+
+## Backbone
+
+* https://backbonejs.org/#Getting-started
+* https://github.com/jashkenas/backbone/wiki/Backbone%2C-The-Primer
+* https://underscorejs.org/
